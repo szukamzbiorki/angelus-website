@@ -2,7 +2,7 @@
     <div class="works">
         <div v-for="project in data" :key="project._id" class="project">
             <NuxtLink :to="'project/' + project._id">
-                {{ project.title }}
+                <span class="italic">{{ project.title }}</span>
                 {{ project.date }}
             </NuxtLink>
         </div>

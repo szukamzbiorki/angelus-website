@@ -16,3 +16,7 @@ body{
     color: black;
     margin: 8px;
 }
+
+.italic{
+    font-family: "MaristItalic";
+}

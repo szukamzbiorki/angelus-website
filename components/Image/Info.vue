@@ -9,7 +9,7 @@
         </div>
         <div class="image-info-work-title">
             <span class="arrow slidePrev-btn">&#8592</span>
-            {{ title }} {{ medium }} {{ size }}
+            <span class="italic">{{ title }}</span>—{{ medium }}—{{ size }}
             <span class="arrow slideNext-btn">&#8594</span>
         </div>
     </div>
