@@ -1,14 +1,14 @@
 @font-face {
     font-family: "Marist";
-    src: url("assets/ABCMarist-Book.otf") format('opentype');
+    src: url("public/assets/ABCMarist-Book.otf") format('opentype');
 }
 @font-face {
     font-family: "MaristItalic";
-    src: url("assets/ABCMarist-BookItalic.otf") format('opentype');
+    src: url("public/assets/ABCMarist-BookItalic.otf") format('opentype');
 }
 @font-face {
     font-family: "Briosa";
-    src: url("assets/FLbrsa2A.ttf") format('truetype');
+    src: url("public/assets/FLbrsa2A.ttf") format('truetype');
 }
 
 body{
