@@ -1,5 +1,5 @@
 <template>
-    <div class="cv">
+    <div class="cvbox">
         <!-- INTRO SECTION -->
         <div class="title">{{ info.name }}
             <br>{{ info.birthday }}
@@ -58,7 +58,7 @@ const props = defineProps({
 </script>
 
 <style>
-.cv {
+.cvbox {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
