@@ -1,6 +1,5 @@
 <template>
     <div class="siema">
-        Człowieku
     </div>
 </template>
 
