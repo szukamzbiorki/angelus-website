@@ -60,7 +60,7 @@ const props = defineProps({
 <style>
 .cvbox {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 100px 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: calc(var(--space) / 2);
     max-width: 60vw;
@@ -98,9 +98,13 @@ const props = defineProps({
 
 .expogrid {
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-columns: 100px 3fr 2fr;
     grid-template-rows: auto;
     grid-gap: calc(var(--space) / 2);
+}
+
+.expogrid>div:nth-child(2) {
+    padding-right: 30px;
 }
 
 .descriptiontext {
@@ -129,10 +133,13 @@ const props = defineProps({
 
 
 @media screen and (max-width: 820px) {
-    .infobox {
-        width: 100vw !important;
-        left: 0;
-        transform: translateX(calc(100vw - 58px));
+    .cvbox {
+        min-width: 100% !important;
+        margin: 0;
+    }
+
+    .expogrid {
+        grid-template-columns: 50px 3fr 2fr;
     }
 
     .education {

@@ -9,7 +9,10 @@
         </div>
         <div class="image-info-work-title">
             <span class="arrow slidePrev-btn">&#8592</span>
-            <span class="italic">{{ title }}</span>—{{ medium }}—{{ size }}
+            <div class="image-info-work-title-holder">
+                <span class="italic">{{ title }}</span><span class="medium">{{ medium }}</span><span class="size">{{
+                    size }}</span>
+            </div>
             <span class="arrow slideNext-btn">&#8594</span>
         </div>
     </div>
@@ -110,5 +113,18 @@ a {
     transform: translateX(-50%);
     z-index: inherit;
     padding: 0 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image-info-work-title-holder {
+    padding: 0 10px;
+}
+
+.image-info-work-title-holder>* {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 </style>
