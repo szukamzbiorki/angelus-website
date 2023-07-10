@@ -3,15 +3,16 @@
         :effect="'creative'" ref="swipe" :autoplay="{
             delay: 8000,
             disableOnInteraction: true,
-        }" :navigation="navigationOptions" @slideChange="onSlideChange" :creative-effect="{
-    prev: {
-        shadow: false,
-        translate: ['-100%', 0, 0],
-    },
-    next: {
-        translate: ['100%', 0, 0],
-    },
-}">
+        }" freeMode: true, freeModeFluid: true :navigation="navigationOptions" @slideChange="onSlideChange"
+        :creative-effect="{
+            prev: {
+                shadow: false,
+                translate: ['-100%', 0, 0],
+            },
+            next: {
+                translate: ['100%', 0, 0],
+            },
+        }">
         <SwiperSlide v-for="image in images" :key="slide">
             <SanityImage class="swiper-img" :asset-id="image.asset._ref" auto="format" />
         </SwiperSlide>

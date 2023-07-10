@@ -42,6 +42,11 @@ onMounted(() => {
 </script>
 
 <style>
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .image-info-box {
     z-index: 500;
 }

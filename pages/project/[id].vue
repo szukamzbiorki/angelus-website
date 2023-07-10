@@ -6,6 +6,10 @@
 </template>
 
 <style>
+body {
+    overflow: hidden;
+}
+
 .singlework {
     width: 100vw;
     height: 100dvh;
@@ -13,6 +17,7 @@
     max-width: 100vw;
     max-height: 100vh;
     overflow: hidden;
+    box-sizing: border-box;
 }
 </style>
 

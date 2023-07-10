@@ -58,11 +58,12 @@ const props = defineProps({
 </script>
 
 <style>
-.infocontainer {
+.cv {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     grid-gap: calc(var(--space) / 2);
+    max-width: 60vw;
 }
 
 .title {
@@ -92,7 +93,7 @@ const props = defineProps({
 }
 
 .exhibitionstitle {
-    margin-bottom: .5em;
+    margin: .5em 0;
 }
 
 .expogrid {
