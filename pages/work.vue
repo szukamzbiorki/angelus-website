@@ -1,13 +1,13 @@
 <template>
-    <Works :data="data"></Works>
+    <Works :data="projects"></Works>
 </template>
 
 <script setup>
-const query = groq`*[_type == "project"]{date, title, _id}`
+const query = groq`*[_type == "project"]{date, link, title, _id}`
 
 const sanity = useSanity()
 
-const { data } = await useAsyncData('articles', () => sanity.fetch(query))
+const { data: projects } = await useAsyncData('articles', () => sanity.fetch(query))
 
 
 definePageMeta({

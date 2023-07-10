@@ -1,19 +1,18 @@
 <template>
-    <Swiper :modules="[SwiperNavigation, SwiperAutoplay, SwiperEffectCreative]" :slides-per-view="1" :loop="true"
-        :effect="'creative'" ref="swipe" :autoplay="{
+    <Swiper v-if="!pending" :modules="[SwiperNavigation, SwiperAutoplay, SwiperEffectCreative]" :slides-per-view="1"
+        :loop="true" :effect="'creative'" ref="swipe" :autoplay="{
             delay: 8000,
             disableOnInteraction: true,
-        }" freeMode: true, freeModeFluid: true :navigation="navigationOptions" @slideChange="onSlideChange"
-        :creative-effect="{
-            prev: {
-                shadow: false,
-                translate: ['-100%', 0, 0],
-            },
-            next: {
-                translate: ['100%', 0, 0],
-            },
-        }">
-        <SwiperSlide v-for="image in images" :key="slide">
+        }" :navigation="navigationOptions" @slideChange="onSlideChange" :creative-effect="{
+    prev: {
+        shadow: false,
+        translate: ['-100%', 0, 0],
+    },
+    next: {
+        translate: ['100%', 0, 0],
+    },
+}">
+        <SwiperSlide v-for="image in works.work" :key="image._id">
             <SanityImage class="swiper-img" :asset-id="image.asset._ref" auto="format" />
         </SwiperSlide>
     </Swiper>
@@ -26,7 +25,8 @@ const medium = useMedium()
 const size = useSize()
 
 const props = defineProps({
-    images: Object
+    works: Object,
+    pending: Boolean
 })
 
 const navigationOptions = {
@@ -46,9 +46,9 @@ function onSlideChange(e) {
         duration: .5
     })
         .add(function () {
-            title.value = props.images[ind].title
-            medium.value = props.images[ind].medium
-            size.value = props.images[ind].size
+            title.value = props.works.work[ind].title
+            medium.value = props.works.work[ind].medium
+            size.value = props.works.work[ind].size
         }).to(".image-info-work-title", {
             opacity: 1,
             filter: "blur(0px)",

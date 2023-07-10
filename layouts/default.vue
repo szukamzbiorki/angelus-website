@@ -12,4 +12,11 @@
     margin-left: 150px;
     margin-top: 1ch;
 }
+
+@media screen and (max-width: 820px) {
+    .content {
+        margin-left: 0;
+        margin-top: 1ch;
+    }
+}
 </style>

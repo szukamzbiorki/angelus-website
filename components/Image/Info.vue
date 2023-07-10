@@ -2,9 +2,9 @@
     <div class="image-info-box">
         <NuxtLink class="image-back" to="/work">&#8592</NuxtLink>
         <div class="image-info-title">
-            <div class="image-info-title-container">{{ info.title }}, {{ info.date }}</div>
+            <div class="image-info-title-container">{{ works.title }}, {{ works.date }}</div>
             <div class="image-info-description">
-                {{ info.description }}
+                {{ works.description }}
             </div>
         </div>
         <div class="image-info-work-title">
@@ -21,13 +21,15 @@ const medium = useMedium()
 const size = useSize()
 
 const props = defineProps({
-    info: Object
+    works: Object
 })
 
+console.log(props.works)
+
 onBeforeMount(() => {
-    title.value = props.info.work[0].title
-    medium.value = props.info.work[0].medium
-    size.value = props.info.work[0].size
+    title.value = props.works.work[0].title
+    medium.value = props.works.work[0].medium
+    size.value = props.works.work[0].size
 })
 
 onMounted(() => {
