@@ -16,7 +16,7 @@ body {
     height: 100dvh;
     max-width: 100vw;
     max-height: calc(100vh-16px);
-    max-height: calc(100dvh-16px);
+    /* max-height: calc(100dvh-16px); */
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -30,9 +30,9 @@ const sanity = useSanity()
 
 const { data: works, pending, error } = await useAsyncData('articles', () => sanity.fetch(query, { id: route.params.id }))
 
-console.log(error)
+console.log(works.value == null)
 
-if (!error.value === null) {
+if (works.value == null) {
     throw createError({ statusCode: 404, statusMessage: 'You are looking for a project that is not existing in the system' })
 }
 

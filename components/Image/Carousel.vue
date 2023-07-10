@@ -1,6 +1,6 @@
 <template>
-    <Swiper v-if="!pending" :modules="[SwiperNavigation, SwiperAutoplay, SwiperEffectCreative]" :slides-per-view="1"
-        :loop="true" :effect="'creative'" ref="swipe" :autoplay="{
+    <Swiper :modules="[SwiperNavigation, SwiperAutoplay, SwiperEffectCreative]" :slides-per-view="1" :loop="true"
+        :effect="'creative'" ref="swipe" :autoplay="{
             delay: 8000,
             disableOnInteraction: true,
         }" :navigation="navigationOptions" @slideChange="onSlideChange" :creative-effect="{
@@ -19,7 +19,6 @@
 </template>
 
 <script setup>
-// import { onBeforeMount } from 'vue'
 const title = useTitle()
 const medium = useMedium()
 const size = useSize()
