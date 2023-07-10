@@ -1,17 +1,14 @@
 <template>
-    <Swiper :modules="[SwiperNavigation, SwiperAutoplay, SwiperEffectCreative]" :slides-per-view="1" :loop="true"
-        :effect="'creative'" ref="swipe" :autoplay="{
-            delay: 8000,
-            disableOnInteraction: true,
-        }" :navigation="navigationOptions" @slideChange="onSlideChange" :creative-effect="{
-    prev: {
-        shadow: false,
-        translate: ['-100%', 0, 0],
-    },
-    next: {
-        translate: ['100%', 0, 0],
-    },
-}">
+    <Swiper :modules="[SwiperNavigation, SwiperEffectCreative]" :slides-per-view="1" :loop="true" :effect="'creative'"
+        ref="swipe" :navigation="navigationOptions" @slideChange="onSlideChange" :creative-effect="{
+            prev: {
+                shadow: false,
+                translate: ['-100%', 0, 0],
+            },
+            next: {
+                translate: ['100%', 0, 0],
+            },
+        }">
         <SwiperSlide v-for="image in works.work" :key="image._id">
             <SanityImage class="swiper-img" :asset-id="image.asset._ref" auto="format" />
         </SwiperSlide>

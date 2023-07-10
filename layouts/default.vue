@@ -9,7 +9,7 @@
 
 <style>
 .content {
-    margin-left: 150px;
+    margin-left: 200px;
     margin-top: 1ch;
 }
 

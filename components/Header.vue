@@ -38,7 +38,7 @@ a {
 .name {
     cursor: default;
     box-sizing: border-box;
-    width: 150px;
+    width: 200px;
 }
 
 .header>*:not(:first-child) {
