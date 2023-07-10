@@ -17,7 +17,6 @@ definePageMeta({
             const { $gsap } = useNuxtApp()
             $gsap.set(el, {
                 opacity: 0,
-                // yPercent: 50,
                 filter: "blur(7px)"
             })
         },
@@ -25,7 +24,6 @@ definePageMeta({
             const { $gsap } = useNuxtApp()
             $gsap.to(el, {
                 opacity: 1,
-                // yPercent: 0,
                 filter: "blur(0px)",
                 duration: .3
             })
@@ -34,7 +32,6 @@ definePageMeta({
             const { $gsap } = useNuxtApp()
             $gsap.to(el, {
                 opacity: 0,
-                // yPercent: 50
             })
         }
     }
