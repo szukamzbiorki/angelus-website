@@ -136,7 +136,7 @@ a {
 }
 
 @media screen and (max-width: 820px) {
-    .image-info-work-title {
+    .image-info-title {
         max-width: 70vw;
     }
 
