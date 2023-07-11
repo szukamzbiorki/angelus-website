@@ -53,7 +53,6 @@ a {
 }
 
 a.on {
-    /* font-family: "ArialItalic"; */
     color: grey !important;
 }
 
@@ -69,21 +68,18 @@ a.on {
     position: absolute;
     top: 16px;
     left: 16px;
-    /* transform: translateX(-50%); */
     background-color: white;
     z-index: 500;
 }
 
 .image-info-title {
     cursor: pointer;
-    /* background-color: white; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
     top: 16px;
     right: 16px;
-    /* transform: translateX(-50%); */
     z-index: inherit;
 }
 
@@ -105,7 +101,6 @@ a.on {
     max-width: 60ch;
     overflow: hidden;
     height: 0px;
-    /* transition: all .4s ease-in-out; */
     padding: 0 3px;
     margin-top: 8px;
 }

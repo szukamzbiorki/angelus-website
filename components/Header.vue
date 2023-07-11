@@ -29,7 +29,6 @@ a {
 }
 
 span.on>a {
-    /* font-family: "ArialItalic"; */
     color: grey !important;
 }
 
@@ -43,7 +42,6 @@ span.on>a {
     flex-direction: row;
     width: 100%;
     box-sizing: border-box;
-    /* height: 98vh; */
     font-family: 'Arial';
 }
 
@@ -67,8 +65,6 @@ span.on>a {
 
 .header>*:not(:first-child) {
     cursor: pointer;
-    /* background-color: lightgrey; */
-    /* padding: 0 3px; */
     transition: all .3s ease;
 
 }

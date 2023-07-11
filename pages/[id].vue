@@ -26,7 +26,6 @@ body {
     height: 100dvh;
     max-width: 100vw;
     max-height: calc(100vh-16px);
-    /* max-height: calc(100dvh-16px); */
     overflow: hidden;
     box-sizing: border-box;
 }

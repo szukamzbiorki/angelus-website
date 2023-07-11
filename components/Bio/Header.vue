@@ -4,7 +4,6 @@
             <SanityImage class="bioimg" :asset-id="data.logo.asset._ref" auto="format" />
         </div>
         <div class="bio">
-            <!-- <p class="bioheader"><span class="briosa">A</span>ngelus <span class="briosa">S</span>chnabl {{ data.short }}</p> -->
             <div class="bioheader">Angelus Schnabl {{ data.short }}</div>
             <div class="bioholder">
                 {{ data.bio }}

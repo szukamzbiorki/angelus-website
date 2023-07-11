@@ -51,8 +51,6 @@ function onSlideChange(e) {
             duration: .5
         })
 }
-
-
 </script>
 
 
@@ -78,8 +76,6 @@ function onSlideChange(e) {
 
 @media screen and (max-width: 820px) {
     .swiper-slide {
-        /* max-height: calc(100vh - 16px); */
-        /* height: calc(100vh - 16px); */
         height: -webkit-fill-available;
         width: calc(100vw - 16px);
         display: flex;
@@ -92,10 +88,7 @@ function onSlideChange(e) {
     }
 
     .swiper-img {
-        /* max-height: calc(100vh - 16px) !important; */
-        /* height: calc(100vh - 16px) !important; */
         max-width: calc(100vw - 16px) !important;
-        /* height: calc(100vh - 16px) !important; */
     }
 }
 </style>
