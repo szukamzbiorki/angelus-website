@@ -5,6 +5,16 @@
     </div>
 </template>
 
+<style scoped>
+body {
+    overflow: hidden;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+</style>
+
 <style>
 body {
     overflow: hidden;
