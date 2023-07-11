@@ -37,10 +37,6 @@ span.on>a {
     transition: all .3s ease;
 }
 
-.headerlink:not(:last-child) {
-    margin-right: .5em;
-}
-
 .header {
     display: flex;
     flex-direction: row;
