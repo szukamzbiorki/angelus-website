@@ -10,6 +10,7 @@
             <span class="installations headerlink">
                 <NuxtLink to="/installations">Installations</NuxtLink>
             </span>
+            &#8203;
             <span class="curriculum headerlink">
                 <NuxtLink to="/curriculum">CV</NuxtLink>
             </span>
