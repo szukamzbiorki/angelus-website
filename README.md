@@ -1,1 +1,1 @@
-[Angelus Schnabl angelusschnabl.com](https:www.angelusschnabl.com)
+[Angelus Schnabl angelusschnabl.com](https:angelusschnabl.com)
