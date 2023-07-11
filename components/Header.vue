@@ -96,6 +96,8 @@ span.on>a {
     .links {
         display: block;
         text-align: left;
+        max-width: calc(100vw - 121px);
+        overflow-wrap: break-word;
     }
 
     .links>* {
