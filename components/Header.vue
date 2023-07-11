@@ -1,7 +1,6 @@
 <template>
     <div class="header">
         <div class="name">
-            <!-- <NuxtLink to="/"><span class="briosa">A</span>ngelus <span class="briosa">S</span>chnabl</NuxtLink> -->
             <NuxtLink to="/">Angelus Schnabl</NuxtLink>
         </div>
         <div class="links">
@@ -91,5 +90,15 @@ span.on>a {
 .briosa {
     font-family: "Briosa";
     font-size: 80%;
+}
+
+@media screen and (max-width: 820px) {
+    .links {
+        display: block;
+    }
+
+    .links>* {
+        display: inline;
+    }
 }
 </style>
