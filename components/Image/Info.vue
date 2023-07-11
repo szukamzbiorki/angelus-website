@@ -74,11 +74,11 @@ a {
     /* background-color: white; */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     position: absolute;
     top: 16px;
-    left: 50vw;
-    transform: translateX(-50%);
+    right: 16px;
+    /* transform: translateX(-50%); */
     z-index: inherit;
 }
 
@@ -116,6 +116,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 80%;
 }
 
 .image-info-work-title-holder {
