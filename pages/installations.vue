@@ -1,13 +1,14 @@
 <template>
-    <Curri :info="data[0]"></Curri>
+    <Works :data="projects"></Works>
 </template>
-<script setup>
 
-const query = groq`*[_type == "cv"]{name, birthday, work[], expos[], education[], upexpos[]}`
+<script setup>
+const query = groq`*[_type == "installation"]{date, link, title, _id}`
 
 const sanity = useSanity()
 
-const { data } = await useAsyncData('articles', () => sanity.fetch(query))
+const { data: projects } = await useAsyncData('articles', () => sanity.fetch(query))
+
 
 definePageMeta({
     layout: "default",

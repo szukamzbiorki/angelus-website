@@ -52,6 +52,11 @@ a {
     color: black;
 }
 
+a.on {
+    /* font-family: "ArialItalic"; */
+    color: grey !important;
+}
+
 .image-info-box {
     z-index: 500;
 }

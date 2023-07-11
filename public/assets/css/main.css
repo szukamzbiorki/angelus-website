@@ -29,8 +29,9 @@ body{
     margin: 8px 8px 0 8px;
 }
 
-.on{
-    font-family: "ArialItalic";
+a.on{
+    /* font-family: "ArialItalic"; */
+    color: grey !important;
 }
 
 @media screen and (min-width: 821px) {

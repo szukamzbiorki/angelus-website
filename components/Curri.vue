@@ -33,6 +33,16 @@
                     </div>
                 </div>
             </div>
+            <div class="education marbot">
+                <div class="exhibitionstitle">WORK EXPERIENCE</div>
+                <div class="expoinstances">
+                    <div class="expogrid marbot" v-for="  expo   in   info.work  " v-bind:key="expo.id">
+                        <div>{{ expo.year }}</div>
+                        <div>{{ expo.place }}</div>
+                        <div>{{ expo.citycountry }}</div>
+                    </div>
+                </div>
+            </div>
             <!-- EDUCATION SECTION -->
             <div class="education marbot">
                 <div class="exhibitionstitle">EDUCATION</div>

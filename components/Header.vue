@@ -7,6 +7,9 @@
         <div class="work headerlink">
             <NuxtLink to="/work">Work</NuxtLink>
         </div>
+        <div class="installations headerlink">
+            <NuxtLink to="/installations">Installations</NuxtLink>
+        </div>
         <div class="curriculum headerlink">
             <NuxtLink to="/curriculum">CV</NuxtLink>
         </div>
@@ -20,6 +23,12 @@
 a {
     text-decoration: none;
     color: black;
+    transition: all .3s ease;
+}
+
+div.on>a {
+    /* font-family: "ArialItalic"; */
+    color: grey !important;
 }
 
 .active {
