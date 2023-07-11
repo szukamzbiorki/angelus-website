@@ -102,8 +102,9 @@ span.on>a {
     .links {
         display: block;
         max-width: calc(100vw - 121px);
-        overflow-wrap: normal;
+        /* overflow-wrap: break-word; */
         text-align: right;
+        white-space: normal;
     }
 
     .links>* {
