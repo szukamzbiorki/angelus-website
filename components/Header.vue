@@ -92,12 +92,22 @@ span.on>a {
     font-size: 80%;
 }
 
+@media screen and (min-width: 821px) {
+    .headerlink:not(:last-child) {
+        margin-right: .5em;
+    }
+}
+
 @media screen and (max-width: 820px) {
+    .headerlink:not(:first-child) {
+        margin-left: .5em;
+    }
+
     .links {
         display: block;
-        text-align: left;
         max-width: calc(100vw - 121px);
         overflow-wrap: break-word;
+        text-align: right;
     }
 
     .links>* {
