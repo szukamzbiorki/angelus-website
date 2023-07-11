@@ -34,6 +34,10 @@ a.on{
     color: grey !important;
 }
 
+.italic{
+    font-family: "MaristItalic";
+}
+
 @media screen and (min-width: 821px) {
     .on{
         flex-grow: 1;
