@@ -10,12 +10,12 @@
 @font-face {
     font-family: "Arial";
     /* src: url("public/assets/ABCMarist-Book.otf") format('opentype'); */
-    src: url("public/assets/Arial Bold.ttf") format('truetype');
+    src: url("public/assets/ArialBold.ttf") format('truetype');
 }
 @font-face {
     font-family: "ArialItalic";
     /* src: url("public/assets/ABCMarist-BookItalic.otf") format('opentype'); */
-    src: url("public/assets/Arial Bold Italic.ttf") format('truetype');
+    src: url("public/assets/ArialBoldItalic.ttf") format('truetype');
 }
 @font-face {
     font-family: "Briosa";
