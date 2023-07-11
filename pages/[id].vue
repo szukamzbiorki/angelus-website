@@ -30,6 +30,12 @@ body {
     overflow: hidden;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 820px) {
+    .singlework {
+        max-height: -webkit-fill-available;
+    }
+}
 </style>
 
 <script setup>
