@@ -140,7 +140,11 @@ const props = defineProps({
     }
 
     .expogrid {
-        grid-template-columns: 50px 3fr 2fr;
+        grid-template-columns: 50px 8fr 4fr;
+    }
+
+    .expogrid>div:nth-child(2) {
+        padding-right: 10px;
     }
 
     .education {
