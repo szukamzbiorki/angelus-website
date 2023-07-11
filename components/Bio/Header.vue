@@ -1,6 +1,6 @@
 <template>
     <div class="biobox">
-        <div class="bioimage">
+        <div v-if="data.logo.asset._ref" class="bioimage">
             <SanityImage class="bioimg" :asset-id="data.logo.asset._ref" auto="format" />
         </div>
         <div class="bio">

@@ -1,51 +1,42 @@
 <template>
-    <div class="siema">
+    <div v-if="show" @click="dissolve" class="siema">
         <img class="cork" src="/assets/cork.png" alt="cork">
     </div>
 </template>
 
 <style scoped>
+.siema {
+    background-color: white;
+    width: 100vw;
+    height: -webkit-fill-available;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .cork {
     position: absolute;
-    width: 200px;
-    /* top: 0;
-    left: 0; */
+    width: 300px;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
 }
 </style>
 
 <script setup>
+const show = ref(true)
 
-// onBeforeMount(() => {
-//     const { $gsap } = useNuxtApp()
-//     $gsap.set(".cork", {
-//         right: "10px",
-//         bottom: "10px",
-//         opacity: 0,
-//         filter: "blur(7px)"
-//     })
-
-//     $gsap.set(".header", {
-//         opacity: 0,
-//         filter: "blur(7px)"
-//     })
-// })
-// onMounted(() => {
-//     const { $gsap } = useNuxtApp()
-//     let tl = $gsap.timeline({ ease: "power2.inOut", duration: .8 }
-//     )
-//     tl.to(".cork", {
-//         opacity: 1,
-//         filter: "blur(0)"
-//     })
-//         .to(".cork", {
-//             right: "10px",
-//             bottom: "10px",
-//         })
-//         .to(".header", {
-//             opacity: 1,
-//             filter: "blur(0)"
-//         })
-// })
+function dissolve() {
+    const { $gsap } = useNuxtApp()
+    let tl = $gsap.timeline()
+    tl.to(".siema", {
+        opacity: 0,
+        filter: "blur(7px)",
+        duration: 1
+    }).add(function () {
+        show.value = false
+    })
+}
 
 definePageMeta({
     pageTransition: {
