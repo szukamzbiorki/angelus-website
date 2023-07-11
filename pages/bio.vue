@@ -2,11 +2,13 @@
     <BioHeader :data="data"></BioHeader>
 </template>
 <script setup>
-const query = groq`*[_type == "bio"][0]`
+const query = groq`*[_type == "bio"]{logo, short, bio}[0]`
 
 const sanity = useSanity()
 
 const { data } = await useAsyncData('articles', () => sanity.fetch(query))
+
+console.log(data)
 
 definePageMeta({
     layout: "default",
