@@ -142,6 +142,7 @@ a {
 
     .image-info-title:active .image-info-description {
         height: 70vh;
+        max-width: 70vw;
         overflow: scroll;
     }
 }
