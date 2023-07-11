@@ -128,4 +128,21 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (min-width: 821px) {
+    .image-info-title:hover .image-info-description {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .image-info-work-title {
+        max-width: 70vw;
+    }
+
+    .image-info-title:active .image-info-description {
+        height: 70vh;
+        overflow: scroll;
+    }
+}
 </style>
