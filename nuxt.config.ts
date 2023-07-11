@@ -8,6 +8,10 @@ export default defineNuxtConfig({
       title: 'Angelus Schnabl',
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
+      link: [
+        { rel: "preload", href: "/assets/ABCMarist-Book.otf", as: "font" },
+        { rel: "preload", href: "/assets/ABCMarist-BookItalic.otf", as: "font" }
+    ],
     },
     pageTransition: {
       name: 'page',

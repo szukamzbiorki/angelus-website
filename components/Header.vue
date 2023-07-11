@@ -1,7 +1,8 @@
 <template>
     <div class="header">
         <div class="name">
-            <NuxtLink to="/"><span class="briosa">A</span>ngelus <span class="briosa">S</span>chnabl</NuxtLink>
+            <!-- <NuxtLink to="/"><span class="briosa">A</span>ngelus <span class="briosa">S</span>chnabl</NuxtLink> -->
+            <NuxtLink to="/">Angelus Schnabl</NuxtLink>
         </div>
         <div class="work">
             <NuxtLink to="/work">Work</NuxtLink>
@@ -33,12 +34,13 @@ a {
     width: 100%;
     box-sizing: border-box;
     /* height: 98vh; */
+    font-family: 'Arial';
 }
 
 .name {
     cursor: default;
     box-sizing: border-box;
-    width: 200px;
+    width: 250px;
 }
 
 .header>*:not(:first-child) {
@@ -46,9 +48,11 @@ a {
     /* background-color: lightgrey; */
     /* padding: 0 3px; */
     transition: all .3s ease;
+
 }
 
 .header>* {
+    text-transform: uppercase;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;

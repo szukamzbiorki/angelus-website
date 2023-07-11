@@ -1,10 +1,21 @@
 @font-face {
     font-family: "Marist";
+    /* src: url("public/assets/ABCMarist-Book.otf") format('opentype'); */
     src: url("public/assets/ABCMarist-Book.otf") format('opentype');
 }
 @font-face {
     font-family: "MaristItalic";
     src: url("public/assets/ABCMarist-BookItalic.otf") format('opentype');
+}
+@font-face {
+    font-family: "Arial";
+    /* src: url("public/assets/ABCMarist-Book.otf") format('opentype'); */
+    src: url("public/assets/Arial Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: "ArialItalic";
+    /* src: url("public/assets/ABCMarist-BookItalic.otf") format('opentype'); */
+    src: url("public/assets/Arial Bold Italic.ttf") format('truetype');
 }
 @font-face {
     font-family: "Briosa";

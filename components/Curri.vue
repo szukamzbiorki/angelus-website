@@ -8,7 +8,7 @@
         <div class="contact">
             <div v-for="  slot   in   info.contactinfo  " v-bind:key="slot.id">{{ slot }}</div>
         </div>
-        <div class="separator"></div>
+        <!-- <div class="separator"></div> -->
         <!-- EXHIBITIONS SECTION -->
         <div class="exhibitions">
             <!-- UPCOMING EXHIBITIONS SECTION -->
@@ -44,9 +44,9 @@
                     </div>
                 </div>
             </div>
-            <div class="colophon">Website designed and built by <a target="_blank"
+            <!-- <div class="colophon">Website designed and built by <a target="_blank"
                     href="https://instagram.com/bartekpierscinski">Bartek
-                    Pierściński</a></div>
+                    Pierściński</a></div> -->
         </div>
     </div>
 </template>
@@ -93,7 +93,8 @@ const props = defineProps({
 }
 
 .exhibitionstitle {
-    margin: .5em 0;
+    margin: .5em 0 0 0;
+    font-size: 80%;
 }
 
 .expogrid {

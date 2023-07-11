@@ -1,9 +1,10 @@
 <template>
     <div class="bio">
-        <p class="bioheader"><span class="briosa">A</span>ngelus <span class="briosa">S</span>chnabl {{ data.short }}</p>
-        <p class="bioholder">
+        <!-- <p class="bioheader"><span class="briosa">A</span>ngelus <span class="briosa">S</span>chnabl {{ data.short }}</p> -->
+        <div class="bioheader">Angelus Schnabl {{ data.short }}</div>
+        <div class="bioholder">
             {{ data.bio }}
-        </p>
+        </div>
     </div>
 </template>
 
@@ -15,12 +16,13 @@ const props = defineProps({
 
 <style>
 .bioheader {
-    max-width: 60ch;
+    max-width: 52ch;
     hyphens: auto;
+    margin-bottom: .5em;
 }
 
 .bioholder {
-    max-width: 60ch;
+    max-width: 52ch;
     hyphens: auto;
 }
 </style>
