@@ -85,7 +85,6 @@ function onSlideChange(e) {
         display: flex;
         justify-content: center;
         align-items: center;
-        cursor: ew-resize;
     }
 
     .swiper-wrapper {

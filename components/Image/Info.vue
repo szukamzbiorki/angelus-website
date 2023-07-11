@@ -140,10 +140,8 @@ a {
         max-width: 70vw;
     }
 
-    .image-info-title:active .image-info-description {
-        height: 70vh;
-        max-width: 70vw;
-        overflow: scroll;
+    .image-info-description {
+        display: none;
     }
 }
 </style>

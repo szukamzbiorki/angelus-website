@@ -4,13 +4,13 @@
             <!-- <NuxtLink to="/"><span class="briosa">A</span>ngelus <span class="briosa">S</span>chnabl</NuxtLink> -->
             <NuxtLink to="/">Angelus Schnabl</NuxtLink>
         </div>
-        <div class="work">
+        <div class="work headerlink">
             <NuxtLink to="/work">Work</NuxtLink>
         </div>
-        <div class="cv">
+        <div class="curriculum headerlink">
             <NuxtLink to="/curriculum">CV</NuxtLink>
         </div>
-        <div class="bio">
+        <div class="bio headerlink">
             <NuxtLink to="/bio">Bio</NuxtLink>
         </div>
     </div>
