@@ -158,7 +158,7 @@ const props = defineProps({
     }
 
     .education {
-        margin-bottom: 13vh;
+        /* margin-bottom: 13vh; */
     }
 
     .active {

@@ -4,17 +4,19 @@
             <!-- <NuxtLink to="/"><span class="briosa">A</span>ngelus <span class="briosa">S</span>chnabl</NuxtLink> -->
             <NuxtLink to="/">Angelus Schnabl</NuxtLink>
         </div>
-        <div class="work headerlink">
-            <NuxtLink to="/work">Work</NuxtLink>
-        </div>
-        <div class="installations headerlink">
-            <NuxtLink to="/installations">Installations</NuxtLink>
-        </div>
-        <div class="curriculum headerlink">
-            <NuxtLink to="/curriculum">CV</NuxtLink>
-        </div>
-        <div class="bio headerlink">
-            <NuxtLink to="/bio">Bio</NuxtLink>
+        <div class="links">
+            <span class="work headerlink">
+                <NuxtLink to="/work">Work</NuxtLink>
+            </span>
+            <span class="installations headerlink">
+                <NuxtLink to="/installations">Installations</NuxtLink>
+            </span>
+            <span class="curriculum headerlink">
+                <NuxtLink to="/curriculum">CV</NuxtLink>
+            </span>
+            <span class="bio headerlink">
+                <NuxtLink to="/bio">Bio</NuxtLink>
+            </span>
         </div>
     </div>
 </template>
@@ -26,15 +28,18 @@ a {
     transition: all .3s ease;
 }
 
-div.on>a {
+span.on>a {
     /* font-family: "ArialItalic"; */
     color: grey !important;
 }
 
-.active {
-    flex-grow: 1;
-    font-family: "MaristItalic";
-    color: black;
+
+.links>* {
+    transition: all .3s ease;
+}
+
+.headerlink:not(:last-child) {
+    margin-right: .5em;
 }
 
 .header {
@@ -44,6 +49,18 @@ div.on>a {
     box-sizing: border-box;
     /* height: 98vh; */
     font-family: 'Arial';
+}
+
+.header>* {
+    display: inline-block;
+}
+
+
+.links {
+    flex-grow: 1;
+    display: block;
+    flex-direction: row;
+    display: flex;
 }
 
 .name {
