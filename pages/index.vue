@@ -12,10 +12,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    cursor: pointer;
 }
 
 .cork {
+    cursor: pointer;
     position: absolute;
     width: 300px;
     top: 50vh;
