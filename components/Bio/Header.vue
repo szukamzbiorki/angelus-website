@@ -8,6 +8,11 @@
             <div class="bioholder">
                 {{ data.bio }}
             </div>
+            <div class="exhibitionstitle">CONTACT</div>
+            <div class="contact">
+                <a :href="'mailto:' + data.contactinfo[0]"> {{ data.contactinfo[0] }}</a><br>
+                <a :href="'tel:' + data.contactinfo[1]">{{ data.contactinfo[1] }}</a>
+            </div>
         </div>
     </div>
 </template>

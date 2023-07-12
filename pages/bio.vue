@@ -2,7 +2,7 @@
     <BioHeader :data="data"></BioHeader>
 </template>
 <script setup>
-const query = groq`*[_type == "bio"]{logo, short, bio}[0]`
+const query = groq`*[_type == "bio"]{logo, short, bio, contactinfo[]}[0]`
 
 const sanity = useSanity()
 
