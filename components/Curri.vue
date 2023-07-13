@@ -141,7 +141,9 @@ const props = defineProps({
     color: lightgrey !important;
 }
 
-
+.expoinstances>div:nth-child(2)>div:nth-child(2) {
+    text-wrap: balance;
+}
 
 @media screen and (max-width: 820px) {
     .cvbox {
