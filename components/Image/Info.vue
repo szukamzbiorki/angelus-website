@@ -129,6 +129,12 @@ a.on {
     align-items: center;
 }
 
+.medium,
+.title,
+.size {
+    text-align: center;
+}
+
 @media screen and (min-width: 821px) {
     .image-info-title:hover .image-info-description {
         height: 100%;
