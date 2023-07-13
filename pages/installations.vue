@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-const query = groq`*[_type == "project" && type == "installation"]{date, link, title, _id}`
+const query = groq`*[_type == "project" && type == "installation"]| order(order asc){order, date, link, title, _id}`
 
 const sanity = useSanity()
 
