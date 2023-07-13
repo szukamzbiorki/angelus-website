@@ -10,7 +10,7 @@
             },
         }">
         <SwiperSlide v-for="image in works.work" :key="image._id">
-            <SanityImage class="swiper-img" :asset-id="image.asset._ref" auto="format" />
+            <SanityImage :h="sizeOfScreen + 150" class="swiper-img" :asset-id="image.asset._ref" auto="format" />
         </SwiperSlide>
     </Swiper>
 </template>
@@ -19,6 +19,10 @@
 const title = useTitle()
 const medium = useMedium()
 const size = useSize()
+
+const { sizeOfScreen } = useScreenSize()
+
+console.log(sizeOfScreen.value)
 
 const props = defineProps({
     works: Object,
