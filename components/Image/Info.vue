@@ -130,8 +130,11 @@ a.on {
 }
 
 .medium,
-.title,
 .size {
+    text-align: center;
+}
+
+.image-info-work-title>div>span:first-child {
     text-align: center;
 }
 
