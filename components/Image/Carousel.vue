@@ -10,7 +10,7 @@
             },
         }">
         <SwiperSlide v-for="image in works.work" :key="image._id">
-            <SanityImage :h="sizeOfScreen" class="swiper-img" :asset-id="image.asset._ref" auto="format" />
+            <SanityImage :h="sizeOfScreen + 200" class="swiper-img" :asset-id="image.asset._ref" auto="format" />
         </SwiperSlide>
     </Swiper>
 </template>
