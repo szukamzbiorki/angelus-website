@@ -116,7 +116,7 @@ a.on {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 80%;
+    font-size: 70%;
 }
 
 .image-info-work-title-holder {
