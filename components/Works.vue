@@ -14,3 +14,9 @@ const props = defineProps({
     data: Array
 })
 </script>
+
+<style>
+.project {
+    margin-bottom: .2em;
+}
+</style>
