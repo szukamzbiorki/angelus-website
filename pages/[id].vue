@@ -39,7 +39,7 @@ body {
 
 <script setup>
 const route = useRoute()
-const query = groq`*[_type == "project" && link == $id]{title, link, date, description, work[]{medium, title, size, asset->{url},asset{_ref}}}[0]`
+const query = groq`*[_type == "project" && link == $id]{title, link, date, description, work[]{medium, year, title, size, asset->{url},asset{_ref}}}[0]`
 
 const sanity = useSanity()
 

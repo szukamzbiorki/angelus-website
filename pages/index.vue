@@ -1,6 +1,6 @@
 <template>
     <div v-if="show" @click="dissolve" class="siema">
-        <img class="cork" src="/assets/cork.png" alt="cork">
+        <SanityImage class="cork" q="100" :w="400" :asset-id="images.imgs[image].asset._ref" auto="format" />
     </div>
 </template>
 
@@ -25,7 +25,17 @@
 </style>
 
 <script setup>
+const query = groq`*[_type == "landing"]{imgs[]}[0]`
+
+const sanity = useSanity()
+
+const { data: images } = await useAsyncData('images', () => sanity.fetch(query))
 const show = ref(true)
+const image = ref(0)
+
+onBeforeMount(() => {
+    image.value = Math.floor(Math.random() * images.value.imgs.length)
+})
 
 function dissolve() {
     const { $gsap } = useNuxtApp()

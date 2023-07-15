@@ -19,10 +19,9 @@
 const title = useTitle()
 const medium = useMedium()
 const size = useSize()
+const year = useYear()
 
 const { sizeOfScreen } = useScreenSize()
-
-console.log(sizeOfScreen.value)
 
 const props = defineProps({
     works: Object,
@@ -37,7 +36,6 @@ const navigationOptions = {
 function onSlideChange(e) {
     let dat = { ...e }
     let ind = dat.realIndex
-    console.log(ind)
     const { $gsap } = useNuxtApp()
     let tl = $gsap.timeline()
     tl.to(".image-info-work-title", {
@@ -49,6 +47,7 @@ function onSlideChange(e) {
             title.value = props.works.work[ind].title
             medium.value = props.works.work[ind].medium
             size.value = props.works.work[ind].size
+            year.value = props.works.work[ind].year
         }).to(".image-info-work-title", {
             opacity: 1,
             filter: "blur(0px)",

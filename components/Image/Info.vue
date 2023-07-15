@@ -10,8 +10,10 @@
         <div class="image-info-work-title">
             <span class="arrow slidePrev-btn">&#8592</span>
             <div class="image-info-work-title-holder">
-                <span class="italic">{{ title }}</span><span class="medium">{{ medium }}</span><span class="size">{{
-                    size }}</span>
+                <span class="italic">{{ title }}<span v-if="year" class="year">, {{ year }}</span></span><span
+                    class="medium">{{ medium
+                    }}</span><span class="size">{{
+    size }}</span>
             </div>
             <span class="arrow slideNext-btn">&#8594</span>
         </div>
@@ -22,6 +24,7 @@
 const title = useTitle()
 const medium = useMedium()
 const size = useSize()
+const year = useYear()
 
 const props = defineProps({
     works: Object
@@ -33,6 +36,7 @@ onBeforeMount(() => {
     title.value = props.works.work[0].title
     medium.value = props.works.work[0].medium
     size.value = props.works.work[0].size
+    year.value = props.works.work[0].year
 })
 
 onMounted(() => {
@@ -136,6 +140,10 @@ a.on {
 
 .image-info-work-title>div>span:first-child {
     text-align: center;
+}
+
+.year {
+    font-family: "Marist";
 }
 
 @media screen and (min-width: 821px) {

@@ -9,3 +9,7 @@ export const useMedium= () => {
 export const useSize = () => {
     return useState('size', () => '')
 }
+
+export const useYear = () => {
+    return useState('year', () => '')
+}
