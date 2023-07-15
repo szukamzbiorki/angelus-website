@@ -1,6 +1,6 @@
 <template>
     <div class="biobox">
-        <div class="bio">
+        <div class="bioboxerki">
             <div class="bioheader">Angelus Schnabl {{ data.short }}</div>
             <div class="bioholder">
                 {{ data.bio }}
@@ -31,7 +31,7 @@ const props = defineProps({
 </script>
 
 <style>
-.bio {
+.bioboxerki {
     margin-right: 1em;
 }
 
