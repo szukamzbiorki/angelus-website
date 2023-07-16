@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: false },
   css: [ '/public/assets/css/main.css'],
+  spaLoadingTemplate: false,
   app: {
     head: {
       title: 'Angelus Schnabl',
