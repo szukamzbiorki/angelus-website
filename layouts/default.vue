@@ -16,6 +16,14 @@ body {
 .content {
     margin-left: 250px;
     margin-top: 1ch;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.content::-webkit-scrollbar {
+    display: none;
 }
 
 @media screen and (max-width: 820px) {
