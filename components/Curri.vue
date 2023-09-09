@@ -93,8 +93,6 @@ const props = defineProps({
     grid-template-rows: auto;
     grid-gap: calc(var(--space) / 2);
     max-width: 60vw;
-    max-height: calc(100vw - 43px);
-    overflow: scroll;
 }
 
 .title {
