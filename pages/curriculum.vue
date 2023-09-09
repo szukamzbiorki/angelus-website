@@ -3,7 +3,7 @@
 </template>
 <script setup>
 
-const query = groq`*[_type == "cv"]{name, birthday, work[], expos[], education[], upexpos[]}`
+const query = groq`*[_type == "cv"]{name, birthday, work[], expos[], education[], upexpos[], awards[], press[]}`
 
 const sanity = useSanity()
 

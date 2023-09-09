@@ -54,6 +54,25 @@
                     </div>
                 </div>
             </div>
+            <div class="education marbot">
+                <div class="exhibitionstitle">AWARDS</div>
+                <div class="expoinstances">
+                    <div class="expogrid marbot" v-for="  expo   in   info.awards  " v-bind:key="expo.id">
+                        <div>{{ expo.year }}</div>
+                        <div>{{ expo.place }}</div>
+                        <div>{{ expo.citycountry }}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="education marbot">
+                <div class="exhibitionstitle">PRESS</div>
+                <div class="expoinstances">
+                    <div class="expogrid marbot" v-for="  expo   in   info.press  " v-bind:key="expo.id">
+                        <div>{{ expo.year }}</div>
+                        <NuxtLink target="blank" :to="expo.link">{{ expo.title }}</NuxtLink>
+                    </div>
+                </div>
+            </div>
             <!-- <div class="colophon">Website designed and built by <a target="_blank"
                     href="https://instagram.com/bartekpierscinski">Bartek
                     Pierściński</a></div> -->
@@ -74,6 +93,8 @@ const props = defineProps({
     grid-template-rows: auto;
     grid-gap: calc(var(--space) / 2);
     max-width: 60vw;
+    max-height: calc(100vw - 43px);
+    overflow: scroll;
 }
 
 .title {
@@ -142,6 +163,11 @@ const props = defineProps({
 }
 
 .expoinstances>div:nth-child(2)>div:nth-child(2) {
+    text-wrap: balance;
+}
+
+.expogrid>a {
+    grid-column: 2/-1;
     text-wrap: balance;
 }
 
