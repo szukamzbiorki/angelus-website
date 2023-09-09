@@ -50,10 +50,6 @@ const props = defineProps({
     margin-bottom: .5em;
 }
 
-.bioimg {
-    /* max-height: 30ch; */
-}
-
 .bioholder {
     max-width: 52ch;
     hyphens: auto;

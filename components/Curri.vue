@@ -183,10 +183,6 @@ const props = defineProps({
         padding-right: 10px;
     }
 
-    .education {
-        /* margin-bottom: 13vh; */
-    }
-
     .active {
         transform: translateX(0);
     }

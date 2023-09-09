@@ -9,6 +9,10 @@
 </template>
 
 <style>
+body {
+    overflow: scroll;
+}
+
 .content {
     margin-left: 250px;
     margin-top: 1ch;
