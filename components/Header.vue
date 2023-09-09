@@ -10,7 +10,6 @@
             <span class="installations headerlink">
                 <NuxtLink to="/installations">Installations</NuxtLink>
             </span>
-            &#8203;
             <span class="curriculum headerlink">
                 <NuxtLink to="/curriculum">CV</NuxtLink>
             </span>
@@ -92,6 +91,10 @@ span.on>a {
 }
 
 @media screen and (max-width: 820px) {
+    .header {
+        flex-direction: column;
+    }
+
     .headerlink:not(:first-child) {
         margin-left: .5em;
     }
