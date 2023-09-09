@@ -22,6 +22,12 @@
     left: 50vw;
     transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 820px) {
+    .cork {
+        width: 70vw;
+    }
+}
 </style>
 
 <script setup>
