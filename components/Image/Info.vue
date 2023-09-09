@@ -10,7 +10,7 @@
         <div class="image-info-work-title">
             <span class="arrow slidePrev-btn">&#8592</span>
             <div class="image-info-work-title-holder">
-                <span class="italic">{{ title }}<span v-if="year" class="year">, {{ year }}</span></span><span
+                <span class="italic">{{ title }}<span v-if="year" class="year">{{ year }}</span></span><span
                     class="medium">{{ medium
                     }}</span><span class="size">{{
     size }}</span>
@@ -147,9 +147,15 @@ a.on {
     font-family: "Marist";
 }
 
+
+
 @media screen and (min-width: 821px) {
     .image-info-title:hover .image-info-description {
         height: 100%;
+    }
+
+    .year::before {
+        content: ", ";
     }
 }
 
