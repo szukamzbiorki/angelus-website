@@ -147,6 +147,9 @@ a.on {
     font-family: "Marist";
 }
 
+.year::before {
+    content: ", ";
+}
 
 
 @media screen and (min-width: 821px) {
@@ -154,12 +157,14 @@ a.on {
         height: 100%;
     }
 
-    .year::before {
-        content: ", ";
-    }
+
 }
 
 @media screen and (max-width: 820px) {
+    .image-info-work-title-holder {
+        width: 80vw;
+    }
+
     .image-info-title {
         max-width: 70vw;
         left: 50vw;
