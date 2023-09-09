@@ -12,8 +12,7 @@
 .content {
     margin-left: 250px;
     margin-top: 1ch;
-    max-height: calc(100vh - 43px);
-    overflow: scroll;
+
 }
 
 .content::-webkit-scrollbar {
@@ -34,6 +33,13 @@
     .content {
         margin-left: 0;
         margin-top: 1ch;
+    }
+}
+
+@media screen and (min-width: 821px) {
+    .content {
+        max-height: calc(100vh - 43px);
+        overflow: scroll;
     }
 }
 </style>
