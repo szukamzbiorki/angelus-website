@@ -96,6 +96,8 @@ a.on {
     background-color: white;
     z-index: inherit;
     padding: 0 3px;
+    text-wrap: balance;
+
 }
 
 .image-info-description {
@@ -155,6 +157,10 @@ a.on {
 @media screen and (max-width: 820px) {
     .image-info-title {
         max-width: 70vw;
+        left: 50vw;
+        transform: translateX(-50%);
+        text-align: center;
+        width: auto;
     }
 
     .image-info-description {
