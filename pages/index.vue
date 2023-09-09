@@ -25,7 +25,7 @@
 
 @media screen and (max-width: 820px) {
     .cork {
-        width: 70vw;
+        width: 65vw;
     }
 }
 </style>
