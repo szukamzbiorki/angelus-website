@@ -96,7 +96,6 @@ a.on {
     background-color: white;
     z-index: inherit;
     padding: 0 3px;
-    text-wrap: balance;
 
 }
 
